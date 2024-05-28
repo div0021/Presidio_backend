@@ -29,6 +29,7 @@ app.use((req,res)=>{
 })
 
 app.listen(3000,async ()=>{
+    console.log(process.env.NODE_ENV);
     console.log("Server is running on port 3000");
     await db();
 });
