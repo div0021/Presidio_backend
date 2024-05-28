@@ -80,7 +80,7 @@ export async function loginUser(req, res) {
 
     res.cookie("jwt", token, {
       httpOnly: true,
-      maxAge: 1000 * 60 * 60 * 24,
+      maxAge: 96500000,
       sameSite: "lax",
       secure: true,
       domain: process.env.NODE_ENV==="production" ? "presidio-backend-ucbp.onrender.com" :  "localhost",
