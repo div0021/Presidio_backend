@@ -3,7 +3,7 @@ import mongoose from "mongoose";
 export async function db() {
     const dbUrl = process.env.MONGO_URL;
 
-    console.log("DBURL",dbUrl);
+    console.log("DBURL",dbUrl)
 
     try{
         await mongoose.connect(dbUrl);
