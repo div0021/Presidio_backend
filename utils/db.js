@@ -7,6 +7,7 @@ export async function db() {
         await mongoose.connect(dbUrl);
         console.log("DB is connected...");
     }catch(error){
+        console.log(error);
         console.log("DB is not connected...");
         process.exit(1);
     }
