@@ -83,7 +83,7 @@ export async function loginUser(req, res) {
       maxAge: 1000 * 60 * 60 * 24,
       sameSite: "lax",
       secure: false,
-      domain: process.env.NODE_ENV==="production" ? "presidio-frontend-ten.vercel.app" :  "localhost",
+      domain: process.env.NODE_ENV==="production" ? "presidio-backend-ucbp.onrender.com" :  "localhost",
     });
 
     return res.status(200).json({ message: "login successfully" });
